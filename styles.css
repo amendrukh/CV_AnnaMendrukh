@@ -141,3 +141,104 @@ li {
     font-size: calc(1.2rem + 0.5vw);
     font-weight: 500;
 }
+
+.education__item,
+.courses__item {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr .5fr .5fr;
+    align-items: center;
+}
+
+.resume__lang-item-desc,
+.education__item-date,
+.courses__item-date {
+    font-size: calc(0.6rem + 0.5vw);
+    font-style: italic;
+    color: var(--gray-color);
+}
+
+.contacts__link-icon,
+.interests__item-icon {
+    min-width: 18px;
+    max-width: 30px;
+    min-height: 18px;
+    max-height: 30px;
+    fill: var(--mightnight-blue-color);
+}
+
+.contacts__link-desc,
+.interests__item-desc {
+    width: 100%;
+    padding-left: 16px;
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+.contacts__link-desc:hover,
+.skills__item:hover {
+    color: var(--light-gray-color);
+}
+
+.resume__interests-desc {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.interests__item {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.resume__about-desc {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: calc(0.5rem + 0.5vw);
+}
+
+.education__item-title,
+.courses__item-title {
+    font-size: calc(0.7rem + 0.5vw);
+}
+
+.education__item-subtitle,
+.courses__item-subtitle {
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.resume__education-desc,
+.resume__courses-desc,
+.resume__skills-desc {
+    width: 100%;
+    height: 100%;
+    display: inline-grid;
+    align-items: center;
+}
+
+.resume__courses-desc {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.resume__skills-desc {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills__item {
+    width: 80%;
+    height: 100%;
+    display: inline-grid;
+    margin: auto;
+    font-size: calc(0.7rem + 0.5vw);
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
