@@ -1,10 +1,199 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
     <title>Résumé</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
-― Hello World! &#x1F609;
+<main>
+    <div class="container">
+        <div class="resume">
+            <div class="resume__block">
+                <div class="resume__avatar resume__item">
+                    <img class="resume__avatar-icon" src="assets/avatar.jpg" alt="Avatar"/>
+                    <h1 class="resume__avatar-title">Anna <span>Mendrukh</span></h1>
+                    <h2 class="resume__avatar-subtitle">Trainee Frontend Developer</h2>
+                </div>
+                <div class="resume__contacts resume__item">
+                    <h3 class="resume__item-title">Contacts</h3>
+                    <div class="contacts__item">
+                        <div class="contacts__link">
+                            <svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 448 512">
+                                <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/>
+                            </svg>
+                            <p class="contacts__link-desc">06.09.1998</p>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <a class="contacts__link" href="tel:+380950273555">
+                            <svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 384 512">
+                                <path d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
+                            </svg>
+                            <p class="contacts__link-desc">+380 95 027 35 55</p>
+                        </a>
+                    </div>
+                    <div class="contacts__item">
+                        <a class="contacts__link" href="mailto:amendrukh@gmail.com">
+                            <svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512">
+                                <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                            </svg>
+                            <p class="contacts__link-desc">amendrukh@gmail.com</p>
+                        </a>
+                    </div>
+                    <div class="contacts__item">
+                        <a class="contacts__link" href="https://github.com/amendrukh" target="_blank">
+                            <svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 496 512">
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                            <p class="contacts__link-desc">amendrukh</p>
+                        </a>
+                    </div>
+                    <div class="contacts__item">
+                        <a class="contacts__link" href="https://www.linkedin.com/in/anna-%D0%BCendrukh/"
+                           target="_blank">
+                            <svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 448 512">
+                                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                            </svg>
+                            <p class="contacts__link-desc">anna-мendrukh</p>
+                        </a>
+                    </div>
+                    <div class="contacts__item">
+                        <a class="contacts__link" target="_blank"
+                           href="https://www.google.com.ua/maps/place/%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE,+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+49000/@48.4624085,34.8355487,11z/data=!3m1!4b1!4m6!3m5!1s0x40dbe303fd08468f:0xa1cf3d5f2c11aba!8m2!3d48.464717!4d35.046183!16zL20vMDN4NDVw?hl=uk&entry=ttu">
+                            <svg class="contacts__link-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 320 512">
+                                <path d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/>
+                            </svg>
+                            <p class="contacts__link-desc">Dnipro, Ukraine</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="resume__lang resume__item">
+                    <h3 class="resume__item-title">Language</h3>
+                    <div class="resume__lang-item">
+                        <div class="resume__lang-item-title">Ukrainian</div>
+                        <span class="resume__lang-item-desc">Native Language</span>
+                    </div>
+                    <div class="resume__lang-item">
+                        <div class="resume__lang-item-title">English</div>
+                        <span class="resume__lang-item-desc">Intermediate level (B1)</span>
+                    </div>
+                </div>
+                <div class="resume__interests resume__item">
+                    <h3 class="resume__item-title">Interests</h3>
+                    <div class="resume__interests-desc interests">
+                        <div class="interests__item painting">
+                            <svg class="interests__item-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="18"
+                                 viewBox="0 0 576 512">
+                                <path d="M339.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L568.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S517.7-4.4 499.1 9.6L262.4 187.2c-24 18-38.2 46.1-38.4 76.1L339.3 367.1zm-19.6 25.4l-116-104.4C143.9 290.3 96 339.6 96 400c0 3.9 .2 7.8 .6 11.6C98.4 429.1 86.4 448 68.8 448H64c-17.7 0-32 14.3-32 32s14.3 32 32 32H208c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/>
+                            </svg>
+                            <p class="interests__item-desc">Painting</p>
+                        </div>
+                        <div class="interests__item cine">
+                            <svg class="interests__item-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512">
+                                <path d="M0 96C0 60.7 28.7 32 64 32H448c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96zM48 368v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zm368-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V368c0-8.8-7.2-16-16-16H416zM48 240v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zm368-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H416zM48 112v32c0 8.8 7.2 16 16 16H96c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16zM416 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H416zM160 128v64c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V128c0-17.7-14.3-32-32-32H192c-17.7 0-32 14.3-32 32zm32 160c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V320c0-17.7-14.3-32-32-32H192z"/>
+                            </svg>
+                            <p class="interests__item-desc">Cinema</p>
+                        </div>
+                        <div class="interests__item games">
+                            <svg class="interests__item-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="20"
+                                 viewBox="0 0 640 512">
+                                <path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/>
+                            </svg>
+                            <p class="interests__item-desc">Games</p>
+                        </div>
+                        <div class="interests__item cooking">
+                            <svg class="interests__item-icon" xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                 viewBox="0 0 512 512">
+                                <path d="M257.5 27.6c-.8-5.4-4.9-9.8-10.3-10.6v0c-22.1-3.1-44.6 .9-64.4 11.4l-74 39.5C89.1 78.4 73.2 94.9 63.4 115L26.7 190.6c-9.8 20.1-13 42.9-9.1 64.9l14.5 82.8c3.9 22.1 14.6 42.3 30.7 57.9l60.3 58.4c16.1 15.6 36.6 25.6 58.7 28.7l83 11.7c22.1 3.1 44.6-.9 64.4-11.4l74-39.5c19.7-10.5 35.6-27 45.4-47.2l36.7-75.5c9.8-20.1 13-42.9 9.1-64.9v0c-.9-5.3-5.3-9.3-10.6-10.1c-51.5-8.2-92.8-47.1-104.5-97.4c-1.8-7.6-8-13.4-15.7-14.6c-54.6-8.7-97.7-52-106.2-106.8zM208 144a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM144 336a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm224-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                            </svg>
+                            <p class="interests__item-desc">Cooking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resume__block">
+                <div class="resume__about resume__item">
+                    <h3 class="resume__item-title">About</h3>
+                    <div class="resume__about-desc">
+                        <p>My name is <span>Anna</span>, and I am a frontend developer with a passion for designing and
+                            creating engaging and effective web applications.</p>
+                        <p>A bit about myself: I worked as an accountant for five years, but I realized that I wanted
+                            something different. That's why I decided to quit and explore a new field.</p>
+                        <p> Over the past year, I have been actively involved in web development, enhancing my knowledge
+                            both independently and through programming courses. I am enthusiastic about the development
+                            process because I enjoy creating programs and refining them.</p>
+                        <p>Now I am here because I am trying to improve my acquired knowledge and learn new things in
+                            order to find my first job in my chosen field. I hope the BSA team can help me with this!
+                        </p>
+                    </div>
+                </div>
+                <div class="resume__education resume__item">
+                    <h3 class="resume__item-title">Education</h3>
+                    <div class="resume__education-desc education">
+                        <div class="education__item">
+                            <h4 class="education__item-title">Dnipropetrovsk State Agrarian and Economic University</h4>
+                            <p class="education__item-subtitle">Bachelor degree, Accounting and taxation</p>
+                            <p class="education__item-date">Sep. 2016 - Jun. 2019</p>
+                        </div>
+                        <div class="education__item">
+                            <h4 class="education__item-title">Technological College of Dnepropetrovsk State Agrarian
+                                University</h4>
+                            <p class="education__item-subtitle">Junior Specialist, Accounting</p>
+                            <p class="education__item-date">Sep. 2013 - Jun. 2016</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume__courses resume__item">
+                    <h3 class="resume__item-title">Courses</h3>
+                    <div class="resume__courses-desc courses">
+                        <div class="courses__item">
+                            <h4 class="courses__item-title">CyberBionic Systematics</h4>
+                            <p class="courses__item-subtitle">Frontend Developer</p>
+                            <p class="courses__item-date">Mar. 2023 - Nov. 2023</p>
+                        </div>
+                        <div class="courses__item">
+                            <h4 class="courses__item-title">IT Education Academy (ITEA)</h4>
+                            <p class="courses__item-subtitle">Frontend Developer (elementary)</p>
+                            <p class="courses__item-date">Nov. 2022 - Mar. 2023</p>
+                        </div>
+                        <div class="courses__item">
+                            <h4 class="courses__item-title">SoftServe</h4>
+                            <p class="courses__item-subtitle">Frontend Developer (elementary)</p>
+                            <p class="courses__item-date">Feb. 2023 - Mar. 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume__skills resume__item">
+                    <h3 class="resume__item-title">Skills</h3>
+                    <ul class="resume__skills-desc skills">
+                        <li class="skills__item">HTML</li>
+                        <li class="skills__item">CSS</li>
+                        <li class="skills__item">SCSS</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">JS</li>
+                        <li class="skills__item">OOP</li>
+                        <li class="skills__item">Webpack</li>
+                        <li class="skills__item">Bootstrap</li>
+                        <li class="skills__item">REST API</li>
+                        <li class="skills__item">TypeScript</li>
+                        <li class="skills__item">React.js</li>
+                        <li class="skills__item">Redux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

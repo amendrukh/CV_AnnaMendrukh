@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    --white-color: #ebebeb;
+    --mightnight-blue-color: #202c38;
+    --light-gray-color: rgb(32 42 53 / 44%);
+    --gray-color: #4e4e4e;
+    --dark-blue: rgb(21 42 65 / 91%);
+}
+
+a {
+    all: unset;
+}
+
+li {
+    word-wrap: break-word;
+    list-style-position: inside;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.resume {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+    color: var(--mightnight-blue-color);
+    background-color: var(--white-color);
+    box-shadow: 0 0 27px -3px rgb(0 0 0 / 45%);
+}
+
+.resume__block {
+    width: 100%;
+    display: inline-grid;
+    grid-template-rows: 430px 1fr 1fr 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.resume__item {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.resume__item-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.4rem + 0.5vw);
+    background-color: var(--light-gray-color);
+    color: var(--dark-blue);
+    box-shadow: 0 0 27px -3px rgb(0 0 0 / 45%);
+}
+
+.resume__avatar {
+    grid-template-rows: 250px 80px 80px;
+    align-items: center;
+    text-align: center;
+}
+
+.resume__avatar-icon {
+    width: inherit;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+.resume__avatar-title {
+    font-size: calc(1.7rem + 0.5vw);
+    font-weight: 400;
+}
+
+.resume__avatar-title span {
+    font-weight: bold;
+}
+
+.resume__avatar-subtitle {
+    font-size: calc(1.4rem + 0.5vw);
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.contacts__link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.resume__contacts {
+    grid-template-rows: 50px repeat(6, 1fr);
+}
+
+.resume__contacts .contacts__item:first-of-type .contacts__link {
+    cursor: unset;
+}
+
+.resume__contacts .contacts__item:first-of-type .contacts__link-desc:hover {
+    color: var(--mightnight-blue-color);
+}
+
+.resume__lang {
+    grid-template-rows: 50px repeat(2, 1fr);
+}
+
+.resume__interests,
+.resume__about,
+.resume__education,
+.resume__courses,
+.resume__skills {
+    grid-template-rows: 50px  1fr
+}
+
+.resume__lang-item-title {
+    font-size: calc(1.2rem + 0.5vw);
+    font-weight: 500;
+}
+
+.education__item,
+.courses__item {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr .5fr .5fr;
+    align-items: center;
+}
+
+.resume__lang-item-desc,
+.education__item-date,
+.courses__item-date {
+    font-size: calc(0.6rem + 0.5vw);
+    font-style: italic;
+    color: var(--gray-color);
+}
+
+.contacts__link-icon,
+.interests__item-icon {
+    min-width: 18px;
+    max-width: 30px;
+    min-height: 18px;
+    max-height: 30px;
+    fill: var(--mightnight-blue-color);
+}
+
+.contacts__link-desc,
+.interests__item-desc {
+    width: 100%;
+    padding-left: 16px;
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+.contacts__link-desc:hover,
+.skills__item:hover {
+    color: var(--light-gray-color);
+}
+
+.resume__interests-desc {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.interests__item {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.resume__about-desc {
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    text-align: justify;
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.resume__about-desc p {
+    text-indent: 20px;
+}
+
+.resume__about-desc span {
+    font-weight: bold;
+}
+
+.education__item-title,
+.courses__item-title {
+    font-size: calc(0.7rem + 0.5vw);
+}
+
+.education__item-subtitle,
+.courses__item-subtitle {
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.resume__education-desc,
+.resume__courses-desc,
+.resume__skills-desc {
+    width: 100%;
+    height: 100%;
+    display: inline-grid;
+    align-items: center;
+}
+
+.resume__courses-desc {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.resume__skills-desc {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills__item {
+    width: 80%;
+    height: 100%;
+    display: inline-grid;
+    margin: auto;
+    font-size: calc(0.7rem + 0.5vw);
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .resume {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .resume__avatar-title {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+
+    .resume__avatar-subtitle {
+        font-size: calc(1.2rem + 0.5vw);
+        color: var(--gray-color);
+    }
+
+    .contacts__link-desc, .interests__item-desc {
+        font-size: calc(0.58rem + 0.5vw);
+    }
+
+    .resume__about-desc {
+        font-size: calc(0.5rem + 0.5vw);
+    }
+
+    .resume__lang-item-title {
+        font-size: calc(1rem + 0.5vw);
+        font-weight: 500;
+    }
+
+    .resume__courses-desc {
+        grid-template-columns: unset;
+    }
+
+    .interests__item:nth-child(even) {
+        text-align: end;
+    }
+
+    .interests__item:nth-child(even) .interests__item-icon {
+        order: 2;
+    }
+
+    .interests__item:nth-child(even) .interests__item-desc {
+        padding-left: unset;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: unset;
+    }
+
+    .resume {
+        width: 100%;
+        box-shadow: unset;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .resume__block {
+        grid-template-rows: unset;
+        justify-content: unset;
+    }
+
+    .resume__avatar-icon {
+        display: inline-block;
+        max-width: 300px;
+        height: auto;
+        margin: auto;
+    }
+
+    .resume__contacts {
+        grid-template-rows: 50px repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contacts__item:nth-child(odd) {
+        text-align: end;
+    }
+
+    .contacts__item:nth-child(odd) .contacts__link-icon {
+        order: 2
+    }
+
+    .contacts__item:nth-child(odd) .contacts__link-desc {
+        padding-left: unset;
+        padding-right: 16px;
+    }
+
+    .resume__item-title {
+        grid-column: span 2;
+    }
+
+    .resume__lang {
+        grid-template-rows: 50px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resume__lang-item:last-child {
+        text-align: end;
+    }
+
+    .resume__education-desc {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .resume__courses-desc {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .courses__item {
+        text-align: center;
+    }
+
+    .courses__item:last-child {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume__contacts {
+        grid-template-columns: 1fr;
+    }
+
+    .resume__contacts .resume__item-title {
+        grid-column: unset;
+    }
+
+    .contacts__item {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contacts__item:nth-child(odd) {
+        text-align: unset;
+    }
+
+    .contacts__item:nth-child(odd) .contacts__link-icon {
+        order: unset;
+    }
+
+    .contacts__item:nth-child(odd) .contacts__link-desc {
+        padding-left: 16px;
+        padding-right: unset;
+    }
+
+    .contacts__link {
+        width: 50%;
+    }
+
+    .contacts__link-desc {
+        font-size: calc(0.6rem + 0.5vw);
+    }
+
+    .resume__lang-item-title {
+        font-size: calc(0.8rem + 0.5vw);
+    }
+
+    .resume__education-desc {
+        gap: 10px;
+    }
+
+    .education__item {
+        text-align: start;
+    }
+
+    .education__item:last-child {
+        text-align: end;
+    }
+
+    .education__item-title,
+    .courses__item-title {
+        font-size: calc(0.6rem + 0.5vw);
+    }
+}
