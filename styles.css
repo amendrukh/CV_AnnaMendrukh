@@ -195,11 +195,19 @@ li {
 }
 
 .resume__about-desc {
-    height: 100%;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: max-content;
+    margin: auto;
     text-align: justify;
-    font-size: calc(0.5rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.resume__about-desc p {
+    text-indent: 20px;
+}
+
+.resume__about-desc span {
+    font-weight: bold;
 }
 
 .education__item-title,
@@ -243,7 +251,7 @@ li {
     cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .resume {
         gap: 20px;
         padding: 20px;
