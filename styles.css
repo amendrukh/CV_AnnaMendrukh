@@ -295,7 +295,6 @@ li {
         padding-left: unset;
         padding-right: 16px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -428,5 +427,4 @@ li {
     .courses__item-title {
         font-size: calc(0.6rem + 0.5vw);
     }
-
 }
