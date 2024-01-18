@@ -1,2 +1,2 @@
 # homepage
-My first personal website. Basically this is just a résumé.
+This is just a résumé.
